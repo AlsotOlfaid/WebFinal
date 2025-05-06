@@ -12,26 +12,23 @@ class category_seeder extends Seeder
      */
     public function run(): void
     {
-        $csvFile = database_path('seeders/CategoriesFInalProj.csv');
+        $path = database_path('seeders/CategoriesFinalProj.csv');
 
-        // Open the CSV file
-        if (($handle = fopen($csvFile, 'r')) !== false) {
-            // Skip the header row
-            fgetcsv($handle);
+        $file = fopen($path, 'r');
 
-            // Loop through each row in the CSV
-            while (($data = fgetcsv($handle, 1000, ',')) !== false) {
-                // Extract the category name from the CSV row
-                $categoryName = $data[0];
+        // Lee la cabecera
+        $headers = fgetcsv($file);
 
-                // Make a POST request to the /categories endpoint
-                Http::post('http://localhost/api/categories', [
-                    'name' => $categoryName,
-                ]);
-            }
+        while (($row = fgetcsv($file)) !== false) {
+            $data = array_combine($headers, $row);
 
-            // Close the file
-            fclose($handle);
+            DB::table('categories')->insert([
+                'name' => $data['name'],
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
         }
+
+        fclose($file);
     }
 }
