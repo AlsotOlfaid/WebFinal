@@ -9,7 +9,7 @@ use App\Http\Controllers\API\WordController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\AuthController;
 
-
+//Inicio de sesion y registro
 Route::post('/signup', [AuthController::class, 'signup']);
 Route::post('/login', [AuthController::class, 'login']);
 
