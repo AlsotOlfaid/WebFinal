@@ -23,7 +23,6 @@ Route::get('/words/{categoryId}/{wordsCount}',[WordController::class, 'getWords'
 
 Route::get('/getWord/{id}',[WordController::class, 'getWordById']);
 
-
 Route::post('/addCategory', [CategoryController::class, 'store']);
 
 /*
