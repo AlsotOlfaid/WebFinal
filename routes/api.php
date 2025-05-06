@@ -7,7 +7,7 @@ use App\Models\Category;
 use App\Models\Word;
 use App\Http\Controllers\API\WordController;
 
-Route::get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
@@ -15,11 +15,6 @@ Route::get('/categories', function () {
     $categories = Category::all();
     return response()->json($categories);
 });
-
-//Route::get('/words', function () {
-//    $words = Word::all();
-//    return response()->json($words);
-//});
 
 //Forma correcta
 Route::get('/words/{categoryId}/{wordsCount}',[WordController::class, 'getWords']);
