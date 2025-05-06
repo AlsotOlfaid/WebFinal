@@ -12,7 +12,7 @@ class category_seeder extends Seeder
      */
     public function run(): void
     {
-        $csvFile = database_path('seeders/CategoriesFinalProj.csv');
+        $csvFile = database_path('\storage\app\private\CategoriesFInalProj.csv');
 
         // Open the CSV file
         if (($handle = fopen($csvFile, 'r')) !== false) {
