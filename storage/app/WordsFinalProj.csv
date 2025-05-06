@@ -1,0 +1,30 @@
+id,word,category_id,created_at,updated_at
+2,Nefrona,2,NULL,NULL
+3,Antibiotico,2,NULL,NULL
+4,Estetoscopio,2,NULL,NULL
+5,Insulina,2,NULL,NULL
+6,Afasia,2,NULL,NULL
+7,Ictus,2,NULL,NULL
+8,Parestesia,2,NULL,NULL
+9,Cianosis,2,NULL,NULL
+10,Epistaxis,2,NULL,NULL
+11,Feudalismo,5,NULL,NULL
+12,Absolutismo,5,NULL,NULL
+13,Ilustración,5,NULL,NULL
+14,Mesopotamia,5,NULL,NULL
+15,Helenismo,5,NULL,NULL
+16,Guerra Fría,5,NULL,NULL
+17,Renacimiento,5,NULL,NULL
+18,Imperialismo,5,NULL,NULL
+19,Cartagineses,5,NULL,NULL
+20,Edad Media,5,NULL,NULL
+21,Aleatoricidad,6,NULL,NULL
+22,Consonancia,6,NULL,NULL
+23,Dodecafonismo,6,NULL,NULL
+24,Fuga,6,NULL,NULL
+25,Glissando,6,NULL,NULL
+26,Homofonía,6,NULL,NULL
+27,Lamento,6,NULL,NULL
+28,Microtonalidad,6,NULL,NULL
+29,Polifonía,6,NULL,NULL
+30,Sonoridad,6,NULL,NULL
