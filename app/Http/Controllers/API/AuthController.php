@@ -4,6 +4,9 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -67,6 +70,4 @@ class AuthController extends Controller
             'token' => $token,
         ], 200);
     }
-
-    
 }
