@@ -13,9 +13,6 @@ use App\Http\Controllers\API\AuthController;
 Route::post('/signup', [AuthController::class, 'signup']);
 Route::post('/login', [AuthController::class, 'login']);
 
-Route::get('/categories', [CategoryController::class, 'index']);
-
-
 Route::middleware('auth:sanctum')->group(function () {
 
     //Palabras
@@ -24,6 +21,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/words/{categoryId}/{wordsCount}',[WordController::class, 'getWords']);
 
     //Categorias
+    Route::get('/categories', [CategoryController::class, 'index']);
     Route::get('/categories/{id}', [CategoryController::class, 'show']);
 
     //Logout
