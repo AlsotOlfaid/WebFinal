@@ -21,8 +21,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/words/{categoryId}/{wordsCount}',[WordController::class, 'getWords']);
 
     //Categorias
-    Route::get('/categories/{id}', [CategoryController::class, 'show']);
     Route::get('/categories', [CategoryController::class, 'index']);
+    Route::get('/categories/{id}', [CategoryController::class, 'show']);
     
 
     //Logout
