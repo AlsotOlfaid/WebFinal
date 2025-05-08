@@ -42,11 +42,12 @@ class WordController extends Controller
 
     public function getWords(string $categoryId, int $wordsCount)
     {
-        // Retrieve the words by category ID and limit the number of words
-        $words = Word::where('category_id', $categoryId)
-            ->inRandomOrder()
-            ->take($wordsCount)
-            ->get();
+
+        $words = Word::with('responses')
+        ->where('category_id', $categoryId)
+        ->inRandomOrder()
+        ->take($wordsCount)
+        ->get();
 
         // Check if the words exist
         if ($words->isEmpty()) {
