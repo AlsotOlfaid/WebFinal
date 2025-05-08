@@ -23,6 +23,15 @@ class ResponseController extends Controller
         //
     }
 
+    public function getByWordId(string $word_id)
+    {
+        // Fetch responses by word_id
+        $responses = Response::where('word_id', $word_id)->get();
+
+        // Return the responses as a JSON response
+        return response()->json($responses);
+    }
+
     /**
      * Display the specified resource.
      */
