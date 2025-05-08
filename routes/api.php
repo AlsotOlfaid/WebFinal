@@ -20,6 +20,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/words',[WordController::class, 'index']);
     Route::get('/words/{id}',[WordController::class, 'getWordById']);
     Route::get('/words/{categoryId}/{wordsCount}',[WordController::class, 'getWords']);
+    Route::post('/words/{wordId}/verify-response', [WordController::class, 'verifyResponse']);
 
     //Categorias
     Route::get('/categories', [CategoryController::class, 'index']);
