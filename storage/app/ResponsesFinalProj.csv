@@ -1,88 +1,91 @@
-id,response,is_correct,word_id,created_at,updated_at
-1,Sustancia que elimina virus dentro del cuerpo humano.,0,2,NULL,NULL
-2,Sustancia química usada para tratar infecciones bacterianas.,1,2,NULL,NULL
-3,Hormona producida por el sistema inmune para fortalecer los glóbulos blancos,0,2,NULL,NULL
-4,Instrumento utilizado para medir la presión arterial.,0,3,NULL,NULL
-5,Dispositivo que permite escuchar los sonidos internos del cuerpo, como el corazón o los pulmones.,1,3,NULL,NULL
-6,Aparato que proyecta imágenes de los órganos internos.,0,3,NULL,NULL
-7,Proteína que ayuda a combatir infecciones respiratorias.,0,4,NULL,NULL
-8,Hormona producida por el páncreas que regula los niveles de glucosa en la sangre.,1,4,NULL,NULL
-9,Enzima digestiva responsable de descomponer las grasas.,0,4,NULL,NULL
-10,Es la unidad estructural y funcional del hígado, encargada de producir bilis.,0,1,NULL,NULL
-11,Es una célula especializada en defender al riñón de infecciones virales.,0,1,NULL,NULL
-12,"Es la unidad funcional del riñón, encargada de filtrar la sangre y formar la orina.",1,1,NULL,NULL
-13,Es una pérdida o alteración del lenguaje causada por daño cerebral.,1,5,NULL,NULL
-14,Es una inflamación de las glándulas salivales.,0,5,NULL,NULL
-16,Es un trastorno de la audición por acumulación de cera.,0,5,NULL,NULL
-17,Es una lesión repentina del cerebro causada por una interrupción del flujo sanguíneo.,1,6,NULL,NULL
-18,Es un tipo de resfriado que afecta solo las vías respiratorias altas.,0,6,NULL,NULL
-19,Es un desorden digestivo que afecta el páncreas.,0,6,NULL,NULL
-20,Es una sensación anormal de hormigueo o adormecimiento, sin causa aparente externa.,1,7,NULL,NULL
-21,Es un tipo de parálisis facial permanente.,0,7,NULL,NULL
-22,Es una enfermedad inflamatoria de los pulmones.,0,7,NULL,NULL
-23,Es una coloración azulada de la piel por falta de oxígeno en la sangre. ,1,8,NULL,NULL
-24,Es una acumulación de líquidos en el abdomen.,0,8,NULL,NULL
-25,Es una reacción alérgica grave a picaduras de insectos.,0,8,NULL,NULL
-26,Es una hemorragia nasal espontánea o provocada.,1,9,NULL,NULL
-27,Es una infección de oído medio causada por hongos.,0,9,NULL,NULL
-28,Es una inflamación de los ganglios linfáticos cervicales.,0,9,NULL,NULL
-29,Sistema económico basado en la industrialización de las ciudades.,0,10,NULL,NULL
-30,Organización social medieval donde nobles ofrecían protección a cambio de trabajo o lealtad.,1,10,NULL,NULL
-31,Movimiento revolucionario del siglo XX en América Latina.,0,10,NULL,NULL
-32,Doctrina que defiende la libertad total de los individuos frente al Estado.,0,11,NULL,NULL
-33,Régimen político donde el rey concentra todo el poder sin límites legales.,1,11,NULL,NULL
-34,Sistema de gobierno compartido entre varios líderes religiosos.,0,11,NULL,NULL
-35,Movimiento cultural del siglo XVIII que promovió la razón, la ciencia y el conocimiento.,1,12,NULL,NULL
-36,Periodo en el que se expandieron los imperios coloniales en Asia. ,0,12,NULL,NULL
-37,Corriente artística que surgió en el siglo XX en París,0,12,NULL,NULL
-38,Civilización precolombina que habitó los Andes.,0,13,NULL,NULL
-39,Región entre los ríos Tigris y Éufrates, considerada cuna de la civilización.,1,13,NULL,NULL
-40,Sistema de escritura jeroglífica usado por los mayas.,0,13,NULL,NULL
-41,Periodo de expansión de la cultura griega tras las conquistas de Alejandro Magno.,1,14,NULL,NULL
-42,Época medieval europea dominada por el cristianismo.,0,14,NULL,NULL
-43,Movimiento renacentista italiano del siglo XV.,0,14,NULL,NULL
-44,Conflicto armado entre Estados Unidos y la URSS en Europa del Este.,0,15,NULL,NULL
-45,Tensión geopolítica sin enfrentamiento directo entre Estados Unidos y la URSS tras la Segunda Guerra Mundial. ,1,15,NULL,NULL
-46,Revolución comunista en China contra Japón.,0,15,NULL,NULL
-47,Movimiento cultural europeo que revivió el arte, la ciencia y la filosofía de la Antigüedad.,1,16,NULL,NULL
-48,Rebelión obrera del siglo XIX en Inglaterra.,0,16,NULL,NULL
-49,Período de expansión del Imperio Otomano en África.,0,16,NULL,NULL
-50,Doctrina medieval sobre la supremacía religiosa.,0,17,NULL,NULL
-51,Política de expansión y dominación territorial de una nación sobre otra.,1,17,NULL,NULL
-52,Sistema filosófico basado en la introspección. ,0,17,NULL,NULL
-53,Pueblo fenicio que fundó Cartago y luchó contra Roma en las Guerras Púnicas.,1,18,NULL,NULL
-54,Tribu germánica que invadió Constantinopla.,0,18,NULL,NULL
-55,Habitantes de Egipto durante el periodo del Imperio Medio.,0,18,NULL,NULL
-56,Periodo entre la Antigüedad y la Edad Moderna caracterizado por el feudalismo y la influencia de la Iglesia.,1,19,NULL,NULL
-57,Etapa de expansión del Islam en Asia Central durante el siglo XIX.,0,19,NULL,NULL
-58,Movimiento social surgido en la Revolución Francesa,0,19,NULL,NULL
-59,Técnica de composición musical donde el compositor determina algunos aspectos de la obra al azar.,1,20,NULL,NULL
-60,Técnica que consiste en usar solo intervalos de cuartas y quintas en las composiciones.,0,20,NULL,NULL
-61,Estilo de música basado en melodías predecibles y simples.,0,20,NULL,NULL
-62,Relación armónica entre dos notas musicales que suenan agradables al oído.,1,21,NULL,NULL
-63,Técnica vocal en la que los cantantes deben hacer cambios rápidos de tono,0,21,NULL,NULL
-64,Composición musical que usa solo disonancias para generar tensión.,0,21,NULL,NULL
-65,Sistema de composición que usa las 12 notas de la escala cromática sin jerarquía tonal.,1,22,NULL,NULL
-66,Composición que se basa únicamente en las primeras 7 notas de la escala mayor.,0,22,NULL,NULL
-67,Técnica que se usa exclusivamente para crear música electrónica experimental,0,22,NULL,NULL
-68,Composición en la que un tema principal es repetido y variado en diferentes voces.,1,23,NULL,NULL
-69,Técnica de percusión donde se tocan distintos tambores a la vez en un solo ritmo. ,0,23,NULL,NULL
-70,Estilo musical que busca crear caos y disonancia de manera aleatoria.,0,23,NULL,NULL
-71,Técnica de deslizamiento en un instrumento musical, generalmente de cuerda o viento, que cubre un intervalo de notas.,1,24,NULL,NULL
-72,Técnica de canto en la que las vocales se mantienen prolongadas sin variaciones.,0,24,NULL,NULL
-73,Composición que se toca solo con un instrumento de viento. ,0,24,NULL,NULL
-74,Técnica musical en la que varias voces o instrumentos tocan el mismo ritmo, pero con diferentes notas.,1,25,NULL,NULL
-75,Composición musical que se caracteriza por el uso exclusivo de percusión.,0,25,NULL,NULL
-76,Estilo de música en el que se tocan varias melodías de forma completamente independiente.,0,25,NULL,NULL
-77,Composición vocal o instrumental que expresa tristeza o dolor.,1,26,NULL,NULL
-78,Estilo de música de danza rápida originado en los años 60.,0,26,NULL,NULL
-79,Técnica de canto que utiliza sonidos guturales para generar tensión,0,26,NULL,NULL
-80,Uso de intervalos musicales más pequeños que el semitono, creando escalas con más notas.,1,27,NULL,NULL
-81,Uso de intervalos musicales que siguen las normas estrictas de la música clásica.,0,27,NULL,NULL
-82,Técnica musical que usa solo dos notas para crear armonías simples.,0,27,NULL,NULL
-83,Técnica musical en la que se combinan varias melodías independientes en una composición.,1,28,NULL,NULL
-84,Estilo de música en el que todos los instrumentos tocan la misma nota al mismo tiempo.,0,28,NULL,NULL
-85,Composición donde una sola voz o instrumento se encarga de todo el ritmo y armonía.,0,28,NULL,NULL
-86,Característica que describe la riqueza o calidad del sonido producido por un instrumento o voz.,1,29,NULL,NULL
-87,Composición musical que usa solo intervalos de terceras y cuartas.,0,29,NULL,NULL
-88,Técnica vocal que busca emular sonidos de animales en la naturaleza.,0,29,NULL,NULL
+"id","response","is_correct","word_id","created_at","updated_at"
+"1","Un alquimista es un marinero especializado en la navegación de barcos durante tormentas eléctricas","0","1",NULL,NULL
+"2","Un alquimista es un experto en botánica que estudia exclusivamente las plantas medicinales para fabricar perfumes naturales.","0","1",NULL,NULL
+"3","Una persona que, en la antigüedad, practicaba una proto-ciencia que combinaba elementos de la química, la filosofía, la astrología y el misticismo, buscando transformar metales en oro y encontrar el elixir de la vida eterna.","1","1",NULL,NULL
+"4","Sustancia que elimina virus dentro del cuerpo humano.","0","3",NULL,NULL
+"5","Sustancia química usada para tratar infecciones bacterianas.","1","3",NULL,NULL
+"6","Hormona producida por el sistema inmune para fortalecer los glóbulos blancos","0","3",NULL,NULL
+"7","Instrumento utilizado para medir la presión arterial.","0","4",NULL,NULL
+"8","Dispositivo que permite escuchar los sonidos internos del cuerpo, como el corazón o los pulmones.","1","4",NULL,NULL
+"9","Aparato que proyecta imágenes de los órganos internos.","0","4",NULL,NULL
+"10","Proteína que ayuda a combatir infecciones respiratorias.","0","5",NULL,NULL
+"11","Hormona producida por el páncreas que regula los niveles de glucosa en la sangre.","1","5",NULL,NULL
+"12","Enzima digestiva responsable de descomponer las grasas.","0","5",NULL,NULL
+"13","Es la unidad estructural y funcional del hígado, encargada de producir bilis.","0","2",NULL,NULL
+"14","Es una célula especializada en defender al riñón de infecciones virales.","0","2",NULL,NULL
+"15","Es la unidad funcional del riñón, encargada de filtrar la sangre y formar la orina.","1","2",NULL,NULL
+"16","Es una pérdida o alteración del lenguaje causada por daño cerebral.","1","6",NULL,NULL
+"17","Es una inflamación de las glándulas salivales.","0","6",NULL,NULL
+"18","Es un trastorno de la audición por acumulación de cera.","0","6",NULL,NULL
+"19","Es una lesión repentina del cerebro causada por una interrupción del flujo sanguíneo.","1","7",NULL,NULL
+"20","Es un tipo de resfriado que afecta solo las vías respiratorias altas.","0","7",NULL,NULL
+"21","Es un desorden digestivo que afecta el páncreas.","0","7",NULL,NULL
+"22","Es una sensación anormal de hormigueo o adormecimiento, sin causa aparente externa.","1","8",NULL,NULL
+"23","Es un tipo de parálisis facial permanente.","0","8",NULL,NULL
+"24","Es una enfermedad inflamatoria de los pulmones.","0","8",NULL,NULL
+"25","Es una coloración azulada de la piel por falta de oxígeno en la sangre. ","1","9",NULL,NULL
+"26","Es una acumulación de líquidos en el abdomen.","0","9",NULL,NULL
+"27","Es una reacción alérgica grave a picaduras de insectos.","0","9",NULL,NULL
+"28","Es una hemorragia nasal espontánea o provocada.","1","10",NULL,NULL
+"29","Es una infección de oído medio causada por hongos.","0","10",NULL,NULL
+"30","Es una inflamación de los ganglios linfáticos cervicales.","0","10",NULL,NULL
+"31","Sistema económico basado en la industrialización de las ciudades.","0","11",NULL,NULL
+"32","Organización social medieval donde nobles ofrecían protección a cambio de trabajo o lealtad.","1","11",NULL,NULL
+"33","Movimiento revolucionario del siglo XX en América Latina.","0","11",NULL,NULL
+"34","Doctrina que defiende la libertad total de los individuos frente al Estado.","0","12",NULL,NULL
+"35","Régimen político donde el rey concentra todo el poder sin límites legales.","1","12",NULL,NULL
+"36","Sistema de gobierno compartido entre varios líderes religiosos.","0","12",NULL,NULL
+"37","Movimiento cultural del siglo XVIII que promovió la razón, la ciencia y el conocimiento. ","1","13",NULL,NULL
+"38","Periodo en el que se expandieron los imperios coloniales en Asia. ","0","13",NULL,NULL
+"39","Corriente artística que surgió en el siglo XX en París","0","13",NULL,NULL
+"40","Civilización precolombina que habitó los Andes.","0","14",NULL,NULL
+"41","Región entre los ríos Tigris y Éufrates, considerada cuna de la civilización.","1","14",NULL,NULL
+"42","Sistema de escritura jeroglífica usado por los mayas.","0","14",NULL,NULL
+"43","Periodo de expansión de la cultura griega tras las conquistas de Alejandro Magno.","1","15",NULL,NULL
+"44","Época medieval europea dominada por el cristianismo.","0","15",NULL,NULL
+"45","Movimiento renacentista italiano del siglo XV.","0","15",NULL,NULL
+"46","Conflicto armado entre Estados Unidos y la URSS en Europa del Este.","0","16",NULL,NULL
+"47","Tensión geopolítica sin enfrentamiento directo entre Estados Unidos y la URSS tras la Segunda Guerra Mundial. ","1","16",NULL,NULL
+"48","Revolución comunista en China contra Japón.","0","16",NULL,NULL
+"49","Movimiento cultural europeo que revivió el arte, la ciencia y la filosofía de la Antigüedad.","1","17",NULL,NULL
+"50","Rebelión obrera del siglo XIX en Inglaterra.","0","17",NULL,NULL
+"51","Período de expansión del Imperio Otomano en África.","0","17",NULL,NULL
+"52","Doctrina medieval sobre la supremacía religiosa.","0","18",NULL,NULL
+"53","Política de expansión y dominación territorial de una nación sobre otra.","1","18",NULL,NULL
+"54","Sistema filosófico basado en la introspección. ","0","18",NULL,NULL
+"55","Pueblo fenicio que fundó Cartago y luchó contra Roma en las Guerras Púnicas.","1","19",NULL,NULL
+"56","Tribu germánica que invadió Constantinopla.","0","19",NULL,NULL
+"57","Habitantes de Egipto durante el periodo del Imperio Medio.","0","19",NULL,NULL
+"58","Periodo entre la Antigüedad y la Edad Moderna caracterizado por el feudalismo y la influencia de la Iglesia.","1","20",NULL,NULL
+"59","Etapa de expansión del Islam en Asia Central durante el siglo XIX.","0","20",NULL,NULL
+"60","Movimiento social surgido en la Revolución Francesa","0","20",NULL,NULL
+"61","Técnica de composición musical donde el compositor determina algunos aspectos de la obra al azar.","1","21",NULL,NULL
+"62","Técnica que consiste en usar solo intervalos de cuartas y quintas en las composiciones.","0","21",NULL,NULL
+"63","Estilo de música basado en melodías predecibles y simples.","0","21",NULL,NULL
+"64","Relación armónica entre dos notas musicales que suenan agradables al oído.","1","22",NULL,NULL
+"65","Técnica vocal en la que los cantantes deben hacer cambios rápidos de tono","0","22",NULL,NULL
+"66","Composición musical que usa solo disonancias para generar tensión.","0","22",NULL,NULL
+"67","Sistema de composición que usa las 12 notas de la escala cromática sin jerarquía tonal.","1","23",NULL,NULL
+"68","Composición que se basa únicamente en las primeras 7 notas de la escala mayor.","0","23",NULL,NULL
+"69","Técnica que se usa exclusivamente para crear música electrónica experimental","0","23",NULL,NULL
+"70","Composición en la que un tema principal es repetido y variado en diferentes voces.","1","24",NULL,NULL
+"71","Técnica de percusión donde se tocan distintos tambores a la vez en un solo ritmo. ","0","24",NULL,NULL
+"72","Estilo musical que busca crear caos y disonancia de manera aleatoria.","0","24",NULL,NULL
+"73","Técnica de deslizamiento en un instrumento musical, generalmente de cuerda o viento, que cubre un intervalo de notas.","1","25",NULL,NULL
+"74","Técnica de canto en la que las vocales se mantienen prolongadas sin variaciones.","0","25",NULL,NULL
+"75","Composición que se toca solo con un instrumento de viento. ","0","25",NULL,NULL
+"76","Técnica musical en la que varias voces o instrumentos tocan el mismo ritmo, pero con diferentes notas.","1","26",NULL,NULL
+"77","Composición musical que se caracteriza por el uso exclusivo de percusión.","0","26",NULL,NULL
+"78","Estilo de música en el que se tocan varias melodías de forma completamente independiente.","0","26",NULL,NULL
+"79","Composición vocal o instrumental que expresa tristeza o dolor.","1","27",NULL,NULL
+"80","Estilo de música de danza rápida originado en los años 60.","0","27",NULL,NULL
+"81","Técnica de canto que utiliza sonidos guturales para generar tensión","0","27",NULL,NULL
+"82","Uso de intervalos musicales más pequeños que el semitono, creando escalas con más notas.","1","28",NULL,NULL
+"83","Uso de intervalos musicales que siguen las normas estrictas de la música clásica.","0","28",NULL,NULL
+"84","Técnica musical que usa solo dos notas para crear armonías simples.","0","28",NULL,NULL
+"85","Técnica musical en la que se combinan varias melodías independientes en una composición.","1","29",NULL,NULL
+"86","Estilo de música en el que todos los instrumentos tocan la misma nota al mismo tiempo.","0","29",NULL,NULL
+"87","Composición donde una sola voz o instrumento se encarga de todo el ritmo y armonía.","0","29",NULL,NULL
+"88","Característica que describe la riqueza o calidad del sonido producido por un instrumento o voz.","1","30",NULL,NULL
+"89","Composición musical que usa solo intervalos de terceras y cuartas.","0","30",NULL,NULL
+"90","Técnica vocal que busca emular sonidos de animales en la naturaleza.","0","30",NULL,NULL

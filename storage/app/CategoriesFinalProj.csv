@@ -1,4 +1,4 @@
-﻿id,name
-1,History
-2,Medicine
-3,Music
+"id","name","created_at","updated_at"
+"2","Medicine",NULL,NULL
+"5","History",NULL,NULL
+"6","Music",NULL,NULL
