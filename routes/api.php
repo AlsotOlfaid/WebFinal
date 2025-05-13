@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->group(function () {
     //Palabras
     Route::get('/words',[WordController::class, 'index']);
     Route::get('/words/{id}',[WordController::class, 'getWordById']);
-    Route::get('/words/{categoryId}/{wordsCount}',[WordController::class, 'getWords']);
+    Route::get('/words/{categoryId}/{wordsCount}/{order}',[WordController::class, 'getWords']);
     Route::post('/words/{wordId}/verify-response', [WordController::class, 'verifyResponse']);
 
     //Categorias

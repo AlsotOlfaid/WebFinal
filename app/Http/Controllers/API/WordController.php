@@ -40,12 +40,17 @@ class WordController extends Controller
         return response()->json($word, 200);
     }
 
-    public function getWords(string $categoryId, int $wordsCount)
+    public function getWords(int $categoryId, int $wordsCount, string $order = 'asc')
     {
+
+        // Validate the order parameter
+        if (!in_array(strtolower($order), ['asc', 'desc'])) {
+            return response()->json(['message' => 'Invalid order parameter. Use "asc" or "desc".'], 400);
+        }
 
         $words = Word::with('responses')
         ->where('category_id', $categoryId)
-        ->inRandomOrder()
+        ->orderBy('id', $order) // Apply the sorting order
         ->take($wordsCount)
         ->get();
 
