@@ -14,6 +14,10 @@ use App\Http\Controllers\API\ResponseController;
 Route::post('/signup', [AuthController::class, 'signup']);
 Route::post('/login', [AuthController::class, 'login']);
 
+//Obtencion de logs
+Route::post('/logs', [LogController::class, 'index']);
+
+
 Route::middleware('auth:sanctum')->group(function () {
 
     //Palabras
