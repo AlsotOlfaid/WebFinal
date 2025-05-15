@@ -9,6 +9,7 @@ use App\Http\Controllers\API\WordController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\ResponseController;
+use App\Http\Controllers\API\LogController;
 
 //Inicio de sesion y registro
 Route::post('/signup', [AuthController::class, 'signup']);
