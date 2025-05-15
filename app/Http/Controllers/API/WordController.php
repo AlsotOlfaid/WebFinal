@@ -29,10 +29,18 @@ class WordController extends Controller
      */
     public function getWordById(string $id)
     {
-        // Retrieve the word by ID along with its responses
+        // Regresamos la palabra con sus respuestas
         $word = Word::with('responses')->find($id);
 
-        // Check if the word exists
+        $playerId = Auth::check() ? Auth::user()->id : null;
+
+        DB::table('logs')->insert([
+        'word_id' => $word->id,
+        'registered_at' => now(),
+        'event' => 'GET',
+        'user_id' => $playerId,
+        ]);
+
         if (!$word) {
             return response()->json(['message' => 'Word Pingas'], 404);
         }
@@ -43,18 +51,19 @@ class WordController extends Controller
     public function getWords(int $categoryId, int $wordsCount, string $order = 'asc')
     {
 
-        // Validate the order parameter
+        // Validamos el parametro
         if (!in_array(strtolower($order), ['asc', 'desc'])) {
             return response()->json(['message' => 'Invalid order parameter. Use "asc" or "desc".'], 400);
         }
 
+        //Obtencion
         $words = Word::with('responses')
         ->where('category_id', $categoryId)
-        ->orderBy('id', $order) // Apply the sorting order
+        ->orderBy('id', $order) 
         ->take($wordsCount)
         ->get();
 
-        // Check if the words exist
+        // Si hay palabras
         if ($words->isEmpty()) {
             return response()->json(['message' => 'No words found'], 404);
         }
@@ -64,28 +73,26 @@ class WordController extends Controller
 
     public function verifyResponse(Request $request, string $wordId)
     {
-        // Validate the incoming request
+        // validamos el request
         $request->validate([
             'response_id' => 'required|integer',
         ]);
 
-        // Retrieve the word along with its responses
+        // regresamos la palabra con sus respuestas
         $word = Word::with('responses')->find($wordId);
 
-        // Check if the word exists
+        // checamos si la palabra existe
         if (!$word) {
             return response()->json(['message' => 'Word not found'], 404);
         }
 
-        // Find the response by ID
+        // buscamos la respuesta
         $response = $word->responses->find($request->response_id);
 
-        // Check if the response exists
+        // Chequeamos si la respuesta existe y si es correcta
         if (!$response) {
             return response()->json(['message' => 'Response not found'], 404);
         }
-
-        // Check if the response is correct
         if ($response->is_correct) {
             return response()->json(['message' => 'Correct response'], 200);
         }

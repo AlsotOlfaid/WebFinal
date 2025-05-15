@@ -56,12 +56,12 @@ class AuthController extends Controller
         // Find the user by email
         $user = User::where('email', $request->email)->first();
 
-        // Check if user exists and password is correct
+        // checamos si el usuario existe y si la contraseña es correcta
         if (!$user || !Hash::check($request->password, $user->password)) {
             return response()->json(['message' => 'Invalid credentials'], 401);
         }
 
-        // Generate a token for the user
+        // Generamos un token para el usuario
         $token = $user->createToken('auth_token')->plainTextToken;
 
         return response()->json([
@@ -73,7 +73,7 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
-        // Revoke the token that was used to authenticate the current request
+        // quitar el token actual
         $request->user()->currentAccessToken()->delete();
 
         return response()->json([
