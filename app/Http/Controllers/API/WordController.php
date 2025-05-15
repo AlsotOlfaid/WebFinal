@@ -18,10 +18,12 @@ class WordController extends Controller
      */
     public function index()
     {
+        $playerId = Auth::check() ? Auth::user()->id : null;
         DB::table('logs')->insert([
         'word_id' => $word->id,
         'event' => 'GET',
         'user_id' => $playerId,
+        'created_at'=>now(),
         ]);
 
         return response()->json(Word::all());
@@ -44,11 +46,11 @@ class WordController extends Controller
         $word = Word::with('responses')->find($id);
 
         $playerId = Auth::check() ? Auth::user()->id : null;
-
         DB::table('logs')->insert([
         'word_id' => $word->id,
         'event' => 'GET',
         'user_id' => $playerId,
+        'created_at'=>now(),
         ]);
 
         if (!$word) {
@@ -73,10 +75,12 @@ class WordController extends Controller
         ->take($wordsCount)
         ->get();
 
+        $playerId = Auth::check() ? Auth::user()->id : null;
         DB::table('logs')->insert([
         'word_id' => $word->id,
         'event' => 'GET',
         'user_id' => $playerId,
+        'created_at'=>now(),
         ]);
 
         // Si hay palabras
@@ -105,10 +109,12 @@ class WordController extends Controller
         // buscamos la respuesta
         $response = $word->responses->find($request->response_id);
 
+        $playerId = Auth::check() ? Auth::user()->id : null;
         DB::table('logs')->insert([
-        'word_id' => $word->id,
+        'word_id' => $wordId,
         'event' => 'POST',
         'user_id' => $playerId,
+        'created_at'=>now(),
         ]);
 
         // Chequeamos si la respuesta existe y si es correcta
