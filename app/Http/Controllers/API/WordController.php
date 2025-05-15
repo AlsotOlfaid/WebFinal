@@ -5,6 +5,11 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Word;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use App\Models\Log; // Asegúrate de importar el modelo Log si lo tienes
+use App\Models\User; // Asegúrate de importar el modelo User si lo tienes
+
 
 class WordController extends Controller
 {
@@ -13,6 +18,12 @@ class WordController extends Controller
      */
     public function index()
     {
+        DB::table('logs')->insert([
+        'word_id' => $word->id,
+        'event' => 'GET',
+        'user_id' => $playerId,
+        ]);
+
         return response()->json(Word::all());
     }
 
@@ -36,7 +47,6 @@ class WordController extends Controller
 
         DB::table('logs')->insert([
         'word_id' => $word->id,
-        'registered_at' => now(),
         'event' => 'GET',
         'user_id' => $playerId,
         ]);
@@ -62,6 +72,12 @@ class WordController extends Controller
         ->orderBy('id', $order) 
         ->take($wordsCount)
         ->get();
+
+        DB::table('logs')->insert([
+        'word_id' => $word->id,
+        'event' => 'GET',
+        'user_id' => $playerId,
+        ]);
 
         // Si hay palabras
         if ($words->isEmpty()) {
