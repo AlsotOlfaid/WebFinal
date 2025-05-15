@@ -105,6 +105,12 @@ class WordController extends Controller
         // buscamos la respuesta
         $response = $word->responses->find($request->response_id);
 
+        DB::table('logs')->insert([
+        'word_id' => $word->id,
+        'event' => 'POST',
+        'user_id' => $playerId,
+        ]);
+
         // Chequeamos si la respuesta existe y si es correcta
         if (!$response) {
             return response()->json(['message' => 'Response not found'], 404);
