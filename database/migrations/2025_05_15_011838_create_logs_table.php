@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('word_id')->constrained('words')->onDelete('cascade');
             $table->enum('event', ['GET', 'POST']);
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->timestamps('registered_at');
+            $table->timestamps();
         });
     }
 
